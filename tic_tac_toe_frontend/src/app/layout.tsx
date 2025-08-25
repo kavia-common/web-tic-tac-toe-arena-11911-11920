@@ -1,9 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Minimal Next.js App",
-  description: "Ultra-minimal Next.js application",
+  title: "Tic Tac Toe Arena",
+  description: "Play Tic Tac Toe in User vs User or User vs Computer modes.",
+  applicationName: "Tic Tac Toe Arena",
+  authors: [{ name: "Tic Tac Toe" }],
+};
+
+export const viewport: Viewport = {
+  themeColor: "#1976d2",
 };
 
 export default function RootLayout({
